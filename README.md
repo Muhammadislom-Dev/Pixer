@@ -25,21 +25,25 @@ int main () {
 
 	
 
-template <class T>
+template <class T1, class T2>
 class nuqta {
 	public:
-		T x;
-		T y;
+		T1 x;
+		T2 y;
 		
 		nuqta (){}
-		nuqta (T x, T y):x(x),y(y){
+		nuqta (T1 x, T2 y):x(x),y(y){
 		}
 };
 
 int main () {
-	nuqta <int>a(5,7);
-	nuqta <double>b(7.8,6.9);
 	
+	nuqta <int, double>a(3,4.8);
+//	nuqta <int>a(5,7);
+//	nuqta <double>b(7.8,6.9);
+//	nuqta < > c(3,5);
+//	
 	cout<<a.x<<" "<<a.y<<endl;
-	cout<<b.x<<" "<<b.y<<endl;
+//	cout<<b.x<<" "<<b.y<<endl;
+//	cout<<c.x<<" "<<c.y<<endl;
 }
