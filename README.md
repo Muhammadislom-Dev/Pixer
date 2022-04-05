@@ -22,3 +22,24 @@ int main () {
 	
 	cout<<Max<double>(a,d)<<endl;
 }
+
+	
+
+template <class T>
+class nuqta {
+	public:
+		T x;
+		T y;
+		
+		nuqta (){}
+		nuqta (T x, T y):x(x),y(y){
+		}
+};
+
+int main () {
+	nuqta <int>a(5,7);
+	nuqta <double>b(7.8,6.9);
+	
+	cout<<a.x<<" "<<a.y<<endl;
+	cout<<b.x<<" "<<b.y<<endl;
+}
